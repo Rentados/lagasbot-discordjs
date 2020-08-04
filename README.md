@@ -1,3 +1,3 @@
-# lagasbot-discordjs
+# LagasBot DiscordJS
 
 LagasBot Example DiscordJs Bot
