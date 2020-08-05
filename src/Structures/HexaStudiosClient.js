@@ -14,10 +14,10 @@ module.exports = class HexaClient extends Client {
 		this.once('ready', () => {
 			console.log(`Logged in as ${this.user.username}!`);
 			console.log(`Bot is ready!`);
-			this.user.setPresence({ activity: { name: 'use l!',type: 'WATCHING' }, status: 'idle' })
+			this.user.setPresence({ activity: { name: 'use l!', type: 'WATCHING' }, status: 'idle' });
 		});
 		this.on('message', async (message) => {
-			const mentionRegex = RegExp(`s`);
+			const mentionRegex = RegExp(`^<@!${this.user.id}$`);
 			const mentionRegexPrefix = RegExp(`^<@!${this.user.id}> `);
 			// console.log(message.content.match(mentionRegex));
 			// console.log(message.content.match(mentionRegexPrefix));

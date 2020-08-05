@@ -1,1 +1,7 @@
 config.json
+node_modules
+.eslintrc.json
+package.json
+packe-lock.json
+yarn.lock
+.gitignore
